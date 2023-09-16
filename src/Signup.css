@@ -1,0 +1,97 @@
+.signup {
+    padding: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  .logo {
+    font-size: 1.8rem;
+    padding: 30px 0px 20px 0px;
+  }
+  .logo h3{
+      letter-spacing:-1px;
+  }
+  .logo h3::after {
+    content: "";
+    background: blue;
+    width: 33px;
+    height: 3px;
+    display: block;
+    margin-top: -8px;
+    margin-left: 3px;
+  } 
+  .icon{
+    position: absolute;
+    margin-top:3px;
+    font-size: 20px;
+    padding-right: 5px;
+    color: #313030;
+  }
+  .icon:last-child{
+    position:relative;
+  }
+  .eye{
+    position: absolute;
+    margin-top: -29px;
+    margin-left: 260px;
+  }
+  
+  input[type="email"],input[type="password"],input[type="text"]{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dbdbdb;
+  font-size: 20px;
+  width: 85%;
+  height: 30px;
+  position: relative;
+  padding-left: 28px;
+  }
+  input[type="email"],input[type="password"]:focus{
+    outline: none;
+  }
+  .username,.email,.cpassword,.password,.remember{
+    padding: 20px 0px;
+  }
+  .error-border{
+    border-bottom: 1px solid red !important;
+  }
+  .remember{
+    position: relative;
+  width: 100%;
+  color: #161616;
+  font-size: 18px;
+  }
+  input[type='checkbox']{
+    position: absolute;
+    padding: 10px;
+  }
+  .accept p{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -3px;
+    color: #fff;
+  }
+  
+  .submit{
+    padding: 30px 30px 20px 5px;
+  }
+  input[type="submit"]{
+    width: 100%;
+   background: rgb(84, 179, 243);
+   border: none;
+   border-radius: 5px;
+   font-size: 25px;
+   height: 45px;
+   font-weight: 700;
+   color: #fff;
+   cursor: pointer;
+  }
+  .already-account{
+    padding: 5px 30px 20px 20px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .already-account span{
+    color: rgb(43, 40, 248);
+    font-weight: 700;
+    font-size: 19px;
+  }
