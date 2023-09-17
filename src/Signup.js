@@ -8,8 +8,8 @@ export default function Signup() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [passwordMatch, setPasswordMatch] = useState(false);
-  const [confirmPasswordTouch,setConfirmPasswordTouch] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [confirmPasswordTouch, setConfirmPasswordTouch] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const togglePasswordVisible = () => {
     setShowPassword(!showPassword);
@@ -17,13 +17,14 @@ export default function Signup() {
   const handleConfirmPassword = (e) => {
     const value = e.target.value;
     setConfirmPassword(value);
-    if(confirmPasswordTouch) {
-    setPasswordMatch(value === password);
-setErrorMessage(value===password?"":"error-border");}
+    if (confirmPasswordTouch) {
+      setPasswordMatch(value === password);
+      setErrorMessage(value === password ? "" : "error-border");
+    }
   };
-  const handleConfirmPasswordFocus=() => {
-setConfirmPasswordTouch(true);  
-};
+  const handleConfirmPasswordFocus = () => {
+    setConfirmPasswordTouch(true);
+  };
 
   return (
     <div className="signup">
@@ -51,7 +52,8 @@ setConfirmPasswordTouch(true);
           <div className="icon">
             <FiLock />
           </div>
-          <input className={errorMessage}
+          <input
+            className={errorMessage}
             type={showPassword ? "text" : "password"}
             placeholder="Enter a password"
             value={password}
@@ -63,7 +65,8 @@ setConfirmPasswordTouch(true);
           <div className="icon">
             <FiLock />
           </div>
-          <input className={errorMessage}
+          <input
+            className={errorMessage}
             type={showPassword ? "text" : "password"}
             placeholder="Confirm a password"
             value={confirmPassword}
@@ -83,7 +86,7 @@ setConfirmPasswordTouch(true);
             )}
           </div>
         </div>
-
+{ confirmPasswordTouch && (passwordMatch?(""):(<p className="error-msg">Your password and confirmation password do not match.</p>))}
         <div className="accept">
           <input type="checkbox" />
           <p>I accept all terms & conditions</p>

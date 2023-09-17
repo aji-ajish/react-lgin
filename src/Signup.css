@@ -54,6 +54,9 @@
   .error-border{
     border-bottom: 1px solid red !important;
   }
+  .error-msg{
+    color:red;
+  }
   .remember{
     position: relative;
   width: 100%;
