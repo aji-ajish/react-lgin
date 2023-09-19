@@ -92,7 +92,7 @@ export default function Signup() {
           <p>I accept all terms & conditions</p>
         </div>
         <div className="submit">
-          <input type="submit" value="Register Now" />
+          <input type="submit" className="submitbtn" value="Register Now" />
         </div>
       </form>
       <p className="already-account">

@@ -23,3 +23,84 @@ body {
   -webkit-backdrop-filter: blur(3.5px);
   border: 1px solid rgba(255, 255, 255, 0.27);
 }
+/* common style */
+.logo {
+  font-size: 1.8rem;
+  padding: 30px 0px 20px 0px;
+}
+
+.logo h3 {
+  letter-spacing: -1px;
+}
+
+.icon {
+  position: absolute;
+  margin-top: 3px;
+  font-size: 20px;
+  padding-right: 5px;
+  color: #313030;
+}
+
+.icon:last-child {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  margin-top: -29px;
+  margin-left: 260px;
+}
+
+.remember {
+  position: relative;
+  width: 100%;
+  color: #161616;
+  font-size: 18px;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  padding: 10px;
+}
+
+.submit {
+  padding: 30px 30px 20px 5px;
+}
+
+.submitbtn {
+  width: 100%;
+  background: rgb(84, 179, 243);
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  height: 45px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dbdbdb;
+  font-size: 20px;
+  width: 85%;
+  height: 30px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.username,
+.email,
+.cpassword,
+.password,
+.remember {
+  padding: 20px 0px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"]:focus {
+  outline: none;
+}

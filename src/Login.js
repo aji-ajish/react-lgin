@@ -45,7 +45,7 @@ export default function Login() {
           <p className="forgot">Forgot password?</p>
         </div>
         <div className="submit">
-          <input type="submit" value="Login Now" />
+          <input type="submit" className="submitbtn" value="Login Now" />
         </div>
       </form>
       <p className="no-account">
